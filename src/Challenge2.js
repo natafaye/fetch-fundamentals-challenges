@@ -28,7 +28,7 @@ const fetchAllMovies = async () => {
 export default function Challenge2() {
 
     const onFetchMoviesClick = async () => {
-        const fetchedMovies = await fetchAllMovies;
+        const fetchedMovies = await fetchAllMovies();
         alert("Fetched:\n" + fetchedMovies.map(movie => movie.name).join("\n"));
     }
 

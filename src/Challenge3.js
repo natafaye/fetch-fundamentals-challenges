@@ -9,10 +9,9 @@ import React from 'react'
  * you click the Fetch All Movies button
  * 
  * Note: If you click the Delete button
- * twice it will not work the second time
- * because the movie is already deleted.
- * You can refresh the page to reset the data
- * and then the movei should be back.
+ * twice you will get a 404 response the
+ * second time because it couldn't find
+ * the movie to delete again.
  * 
  */
 
@@ -28,11 +27,13 @@ const deleteMovie = async (id) => {
     // the response or return anything
 }
 
+/**** DON'T CHANGE ANYTHING BELOW ****/
+
 export default function Challenge3() {
 
     const onFetchMoviesClick = async () => {
-        const fetchedMovies = await fetchAllMovies;
-        alert("Fetched:\n" + fetchedMovies.map(movie => movie.name).join(", "));
+        const fetchedMovies = await fetchAllMovies();
+        alert("Fetched:\n" + fetchedMovies.map(movie => movie.name).join("\n"));
     }
 
     const onDeleteMovieClick = async () => {

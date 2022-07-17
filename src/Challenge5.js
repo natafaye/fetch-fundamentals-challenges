@@ -1,7 +1,7 @@
 import React from 'react'
 
 /*
- * Challenge 4: Updating and Alerting
+ * Challenge 5: Updating and Alerting
  * 
  * When it's working correctly you should see:
  * 
@@ -37,7 +37,7 @@ export default function Challenge5() {
     }
 
     const onUpdateMovieClick = async () => {
-        await updateMovieById(2, { name: "Star Wars: Return of the Jedi" });
+        await updateMovieById(1, { name: "Star Wars: Return of the Jedi" });
         alert("Finished trying to update");
     }
 

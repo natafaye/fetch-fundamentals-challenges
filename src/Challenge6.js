@@ -1,7 +1,7 @@
 import React from 'react'
 
 /*
- * Challenge 4: Creating and Alerting
+ * Challenge 6: Creating and Alerting
  * 
  * When it's working correctly, every time you
  * click the Create button a new Harry Potter
